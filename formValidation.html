@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/stylesheet.css" />
+    <title>Form Validation</title>
+  </head>
+
+  <body>
+    <h1 id="formTitle">Registration Form</h1>
+
+<div class="form">
+
+    <form action="info.php" method="post">
+      <p>
+        <label for="userId">User Id:</label>
+        <input
+          name="submitted-name"
+          autocomplete="name"
+          id="userId"
+          minlength="5"
+          maxlength="12"
+        />
+      </p>
+
+      <p>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="7"
+          maxlength="12"
+        />
+      </p>
+
+      <p>
+        <label for="name">Name:</label>
+        <input
+          name="name"
+          id="name"
+          name="name"
+          required
+          minlength="7"
+          maxlength="12"
+        />
+      </p>
+
+      <p>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+      </p>
+
+      <p>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="volvo">South Africa</option>
+          <option value="saab">United States</option>
+          <option value="fiat">UK</option>
+          <option value="audi">Audi</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="zipCode">ZIP Code:</label>
+        <textarea id="zipCode" name="zipCode" inputmode="numeric"></textarea>
+      </p>
+
+      <p>
+        <label for="mail">Email:</label>
+        <input
+          name="email"
+          id="email"
+          name="email"
+          required
+          inputmode="email"
+        />
+      </p>
+
+      <p>
+        <label for="sex" id="sex">Sex:</label>
+        <input type="checkbox" id="Sex" name="sex" required /> Male
+        <input type="checkbox" id="Sex" name="sex" required /> Female
+      </p>
+
+      <p>
+        <label for="language" id="language">Language:</label>
+        <input type="checkbox" id="language" name="language" required />English
+        <input
+          type="checkbox"
+          id="language"
+          name="language"
+          required
+        />Non-English
+      </p>
+
+      <p>
+        <label for="about">About:</label>
+        <textarea id="about" name="about" rows="5" cols="33"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+</div>
+
+  </body>
+</html>
