@@ -1,12 +1,26 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items:center
+
+.validationForm{
+    width: 50%;
+    margin: auto;
 }
 
-.form{
+
+#formTitle{
+    text-align: center;
+}
+
+.formItems{
     display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.labels{
+    align-items: flex-end;
+    width: 25%;
+}
+
+.inputs{
+    align-items: flex-start;
 }
 

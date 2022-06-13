@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheet/stylesheet.css" />
+    <link rel="stylesheet" href="./stylesheet/stylesheet.css"/>
     <title>Form Validation</title>
   </head>
 
@@ -13,20 +13,22 @@
 
 <div class="form">
 
-    <form action="info.php" method="post">
-      <p>
-        <label for="userId">User Id:</label>
+    <form action="info.php" method="post" class="validationForm">
+
+      <div class="formItems">
+        <label for="userId" class="labels">User Id:</label>
         <input
           name="submitted-name"
           autocomplete="name"
           id="userId"
           minlength="5"
           maxlength="12"
+          class="inputs"
         />
-      </p>
+      </div>
 
-      <p>
-        <label for="password">Password:</label>
+      <div class="formItems">
+        <label for="password" class="labels">Password:</label>
         <input
           type="password"
           id="password"
@@ -34,11 +36,12 @@
           required
           minlength="7"
           maxlength="12"
+          class="inputs"
         />
-      </p>
+      </div>
 
-      <p>
-        <label for="name">Name:</label>
+      <div class="formItems">
+        <label for="name" class="labels">Name:</label>
         <input
           name="name"
           id="name"
@@ -46,61 +49,63 @@
           required
           minlength="7"
           maxlength="12"
+          class="inputs"
         />
-      </p>
+      </div>
 
-      <p>
-        <label for="address">Address:</label>
-        <textarea id="address" name="address"></textarea>
-      </p>
+      <div class="formItems">
+        <label for="address" class="labels">Address:</label>
+        <textarea class="inputs" name="address"></textarea>
+      </div>
 
-      <p>
-        <label for="country">Country:</label>
-        <select id="country" name="country">
+      <div class="formItems">
+        <label for="country" class="labels">Country:</label>
+        <select class="inputs" name="country">
           <option value="volvo">South Africa</option>
           <option value="saab">United States</option>
           <option value="fiat">UK</option>
           <option value="audi">Audi</option>
         </select>
-      </p>
+      </div>
 
-      <p>
-        <label for="zipCode">ZIP Code:</label>
-        <textarea id="zipCode" name="zipCode" inputmode="numeric"></textarea>
-      </p>
+      <div class="formItems">
+        <label for="zipCode" class="labels">ZIP Code:</label>
+        <textarea class="inputs" name="zipCode" inputmode="numeric"></textarea>
+      </div>
 
-      <p>
-        <label for="mail">Email:</label>
+      <div class="formItems">
+        <label for="mail" class="labels">Email:</label>
         <input
           name="email"
           id="email"
           name="email"
           required
           inputmode="email"
+          class="inputs"
         />
-      </p>
+      </div>
 
-      <p>
-        <label for="sex" id="sex">Sex:</label>
-        <input type="checkbox" id="Sex" name="sex" required /> Male
-        <input type="checkbox" id="Sex" name="sex" required /> Female
-      </p>
+      <div class="formItems">
+        <label for="sex" id="sex" class="labels">Sex:</label>
+        <input type="checkbox" class="inputs" name="sex" required /> Male
+        <input type="checkbox" class="inputs" name="sex" required /> Female
+      </div>
 
-      <p>
-        <label for="language" id="language">Language:</label>
-        <input type="checkbox" id="language" name="language" required />English
+      <div class="formItems">
+        <label for="language" class="labels">Language:</label>
+        <input type="checkbox" class="inputs" name="language" required />English
         <input
           type="checkbox"
-          id="language"
+          class="inputs"
           name="language"
           required
         />Non-English
-      </p>
+      </div>
 
-      <p>
-        <label for="about">About:</label>
-        <textarea id="about" name="about" rows="5" cols="33"></textarea>
-      </p>
+      <div class="formItems">
+        <label for="about" class="labels">About:</label>
+        <textarea class="inputs" name="about" rows="5" cols="33"></textarea>
+      </div>
 
       <p>
         <input type="submit" value="Submit" />
